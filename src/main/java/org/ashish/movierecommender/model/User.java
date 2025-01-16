@@ -1,21 +1,20 @@
 package org.ashish.movierecommender.model;
+
 import jakarta.persistence.*;
 import lombok.Data;
 import java.util.Set;
 
 @Data
 @Entity
-@Table(name = "movies")
-
-
-public class Movie {
+@Table(name = "users")
+public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private String title;
-    private String genre;
-    private String director;
 
-    @OneToMany(mappedBy = "movie")
+    private String username;
+    private String email;
+
+    @OneToMany(mappedBy = "user")
     private Set<Rating> ratings;
 }
