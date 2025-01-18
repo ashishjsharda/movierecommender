@@ -14,6 +14,7 @@ public class Movie {
     private Long id;
     private String title;
     private String genre;
+    private Integer releaseYear;
     private String director;
 
     @OneToMany(mappedBy = "movie")
