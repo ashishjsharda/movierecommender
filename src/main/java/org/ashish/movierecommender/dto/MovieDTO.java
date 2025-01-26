@@ -49,4 +49,12 @@ public class MovieDTO {
     public void setDirector(String director) {
         this.director = director;
     }
+
+    public void setReleaseYear(Integer releaseYear) {
+        this.releaseYear = releaseYear;
+    }
+
+    public void setAverageRating(Double averageRatingForMovie) {
+        this.averageRating = averageRatingForMovie;
+    }
 }
