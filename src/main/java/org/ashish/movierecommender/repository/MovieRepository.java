@@ -17,3 +17,5 @@ public interface MovieRepository extends JpaRepository<Movie, Long> {
     @Query("SELECT m FROM Movie m WHERE m.releaseYear = :year")
     List<Movie> findByYear(@Param("year") Integer year);
 }
+
+
