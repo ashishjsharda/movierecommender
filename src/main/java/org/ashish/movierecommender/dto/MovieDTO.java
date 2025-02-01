@@ -57,4 +57,12 @@ public class MovieDTO {
     public void setAverageRating(Double averageRatingForMovie) {
         this.averageRating = averageRatingForMovie;
     }
+
+    public Double getAverageRating() {
+        return averageRating;
+    }
+
+    public Integer getReleaseYear() {
+        return releaseYear;
+    }
 }

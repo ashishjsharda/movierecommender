@@ -1,11 +1,14 @@
 package org.ashish.movierecommender.dto;
 
+import java.util.List;
+
 public class RecommendationDTO {
     private Long id;
     private Long userId;
     private Long movieId;
     private Integer rating;
     private String review;
+    private List<MovieDTO> recommendedMovies;
 
     public RecommendationDTO() {
     }
@@ -56,5 +59,13 @@ public class RecommendationDTO {
 
     public void setReview(String review) {
         this.review = review;
+    }
+
+    public List<MovieDTO> getRecommendedMovies() {
+        return recommendedMovies;
+    }
+
+    public void setRecommendedMovies(List<MovieDTO> recommendedMovies) {
+        this.recommendedMovies = recommendedMovies;
     }
 }
